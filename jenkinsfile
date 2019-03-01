@@ -21,6 +21,8 @@ tools {
         sh 'mvn test'
         }
         }
+        stage('Artifactory {
+        steps {
         
         rtServer (
     id: "Artifactory-1",
@@ -41,5 +43,7 @@ rtUpload (
          ]
         }"""
 )
+}
+}
    }
 }
