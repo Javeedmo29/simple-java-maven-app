@@ -27,10 +27,6 @@ tools {
     url: "http://104.211.226.39:8081/artifactory",
     username: "admin",
     password: "javeed@90"
-        bypassProxy: true
-    // Configure the connection timeout (in seconds).
-    // The default value (if not configured) is 300 seconds:
-    timeout = 300
 )
 )
 rtUpload (
