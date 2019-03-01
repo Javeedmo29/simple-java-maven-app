@@ -21,6 +21,6 @@ tools {
         sh 'mvn test'
         }
         }
-
+}
 }
   
