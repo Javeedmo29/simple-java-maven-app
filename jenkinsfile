@@ -21,29 +21,7 @@ tools {
         sh 'mvn test'
         }
         }
-        stage('Artifactory') {
-        steps {
-        
-        rtServer {
-    id: "Artifactory-1",
-    url: "http://104.211.226.39:8081/artifactory",
-    username: "admin",
-    password: "javeed@90"
-}
-}
-rtUpload {{
-    serverId: "Artifactory-1",
-    spec:
-        """{
-          "files": {
-            {
-              "pattern": "bazinga/*froggy*.zip",
-              "target": "bazinga-repo/froggy-files/"
-            }
-         }
-        }"""
-}
-}
+
 }
    }
 }
