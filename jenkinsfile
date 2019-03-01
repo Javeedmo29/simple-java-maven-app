@@ -11,5 +11,11 @@ tools {
            sh "mvn -B -DskipTests clean package"
          }
         }
-}
+        
+        stage('Deploy') {
+           step{
+            sh 'java -jar target/sample-app-1.0-SNAPSHOT.jar'
+            }
+        }
+   }
 }
