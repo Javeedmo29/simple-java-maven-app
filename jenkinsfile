@@ -21,7 +21,7 @@ tools {
         sh 'mvn test'
         }
         }
-        stage('Artifactory {
+        stage('Artifactory') {
         steps {
         
         rtServer (
