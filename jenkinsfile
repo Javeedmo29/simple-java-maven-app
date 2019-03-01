@@ -7,7 +7,7 @@ tools {
    stages {
    stage('Build') {
    step {
-      sh "mvn -b -dskiptests clean package"
+      sh "mvn -b -Dskiptests clean package"
       }
       }
 }
