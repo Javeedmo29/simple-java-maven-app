@@ -1,21 +1,19 @@
-package com.mycompany.app;
+package com.example;
 
 /**
- * Hello world!
+ * This is a class.
  */
-public class App
-{
+public class Greeter {
 
-    private final String message = "Hello World!";
+  /**
+   * This is a constructor.
+   */
+  public Greeter() {
 
-    public App() {}
+  }
 
-    public static void main(String[] args) {
-        System.out.println(new App().getMessage());
-    }
-
-    private final String getMessage() {
-        return message;
-    }
-
+  //TODO: Add javadoc comment
+  public String greet(String someone) {
+    return String.format("Hello, %s!", someone);
+  }
 }
