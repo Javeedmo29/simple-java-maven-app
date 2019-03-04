@@ -13,7 +13,7 @@ class App extends JFrame implements ActionListener
     ButtonGroup bg;  
     int count=0,current=0,x=1,y=1,now=0;  
     int m[]=new int[10];      
-    OnlineTest(String s)  
+    App(String s)  
     {  
         super(s);  
         l=new JLabel();  
@@ -183,6 +183,6 @@ class App extends JFrame implements ActionListener
     }  
     public static void main(String s[])  
     {  
-        new OnlineTest("Online Test Of Java");  
+        new App("Online Test Of Java");  
     }  
 }  
