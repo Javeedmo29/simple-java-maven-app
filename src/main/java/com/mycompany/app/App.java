@@ -1,6 +1,6 @@
 
 /*Online Java Paper Test*/  
-package com.mycompany.app;  
+  
 import java.awt.*;  
 import java.awt.event.*;  
 import javax.swing.*;  
