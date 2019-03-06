@@ -1,4 +1,4 @@
-FROM java:8
+FROM java1.8.0
 WORKDIR /
 ADD my-app-1.0-SNAPSHOT.jar
 EXPOSE 4000
